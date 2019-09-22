@@ -264,7 +264,7 @@ public class OrToolsDemoApplicationTest {
     private MPSolutionResponse solve(MPModelProto.Builder mpModelProto) {
         final MPModelRequest mpModelRequest = MPModelRequest.newBuilder()
                 .setEnableInternalSolverOutput(true)
-                .setSolverType(MPModelRequest.SolverType.SCIP_MIXED_INTEGER_PROGRAMMING)
+                .setSolverType(MPModelRequest.SolverType.GUROBI_MIXED_INTEGER_PROGRAMMING)
                 .setModel(mpModelProto)
                 .build();
 
